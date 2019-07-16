@@ -25,4 +25,7 @@ Natürlich kommt man nie ganz ohne eigenes CSS aus, aber wie gesagt versuche ich
 
 Wie gesagt ist Gulp ein Taskrunner, der einem unliebsame Aufgaben abnimmt. Auch die .scss files werden per Gulp kompiliert. Am Ende könnt ihr ganz einfach den scss-Ordner ignorieren und nur den css-Ordner übernehmen. 
 
-## Have fun mit euren Konzepten 
+
+##### Have fun mit euren Konzepten!
+
+![Noice](https://media.tenor.com/images/e8b8e33820b0be29a1ed307a1380fc18/tenor.gif)
