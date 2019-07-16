@@ -10,7 +10,9 @@ Es gibt 3 verschiedene Seiten die sich untereinander mit Buttons verlinken: **in
 
 2. Öffnet den Ordner im Terminal und startet einmal ```npm install```.
 
-3. Ich habe das ganze Projekt mit einem kleinen Taskrunner ausgestattet, der ein paar simple Programme automatisch im Hintergrund ausführt. Wenn das Terminal mit installieren durch ist, müsst ihr einfach nur ```gulp``` im Terminal starten, und es sollte sich automatisch das Browserfenster öffnen. Gulp lädt die Internetseite bei jeder Änderung im HTML, SCSS, oder Javascript von alleine neu. 
+3. Jetzt im Terminal ```npm install --global gulp-cli``` starten und installieren.
+
+4. Ich habe das ganze Projekt mit einem kleinen Taskrunner ausgestattet, der ein paar simple Programme automatisch im Hintergrund ausführt. Wenn das Terminal mit installieren durch ist, müsst ihr den Unterordner src im Terminal auswählen und dort einfach den Befehl ```gulp```  starten, und es sollte sich automatisch das Browserfenster öffnen. Gulp lädt die Internetseite bei jeder Änderung im HTML, SCSS, oder Javascript von alleine neu. 
 
 ## Bootstrap
 
