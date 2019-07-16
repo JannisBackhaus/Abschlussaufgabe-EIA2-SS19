@@ -34,4 +34,4 @@ Wie gesagt ist Gulp ein Taskrunner, der einem unliebsame Aufgaben abnimmt. Auch 
 
 # Have fun mit euren Konzepten!
 
-![Noice](https://raw.githubusercontent.com/JannisBackhaus/Abschlussaufgabe-EIA2-SS19/master/b33d6d78190e1aeb54851d3f7b18042b%20(1).jpg?token=AKOQ4JWWEHGZY5CEELFHY6K5FXUR4)
+![Noice](https://media1.tenor.com/images/0490c28b2d33d0ae40f823e53f6a2c15/tenor.gif?itemid=5439517)
