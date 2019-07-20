@@ -16,7 +16,7 @@ namespace AbschlussaufgabeSS19 {
         for (let i: number = 0; i < removeItemButtons.length; i++) {
             removeItemButtons[i].addEventListener("click", removeItemAtClick);
         }
-
+ 
         document.getElementById("save-button").addEventListener("click", sendData);
 
         getDataFromServer();

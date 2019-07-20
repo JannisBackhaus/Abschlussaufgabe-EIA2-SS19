@@ -16,7 +16,7 @@ namespace AbschlussaufgabeSS19 {
         xhr.open("GET", address + "?getData0", true);
         xhr.addEventListener("readystatechange", handleStateChangeGetData);
         xhr.send();
-    }
+    } 
 
     function handleStateChangeGetData(_event: Event): void {
         var xhr: XMLHttpRequest = <XMLHttpRequest>_event.target;

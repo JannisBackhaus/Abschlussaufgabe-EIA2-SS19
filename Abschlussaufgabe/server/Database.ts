@@ -12,16 +12,16 @@ interface Entrypoints {
     amount: string;
     item: string;
     price: string;
-}
+} 
 
 export interface StoredData {
     datatype: string;
     datastring: string;
-}
+} 
 
 
 
-interface Categories {
+interface Categories { 
     [key: number]: Category;
 }
 interface Category {

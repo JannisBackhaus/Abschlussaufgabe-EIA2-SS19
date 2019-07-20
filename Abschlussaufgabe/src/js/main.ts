@@ -17,7 +17,7 @@ namespace AbschlussaufgabeSS19 {
 
 		switch (_element) {
 			case "div":
-
+ 
 				const div: HTMLDivElement = document.createElement("div");
 
 				for (let i: number = 0; i < classArray.length; i++) {

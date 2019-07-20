@@ -18,9 +18,9 @@ namespace AbschlussaufgabeSS19 {
         let datastring: string;
         let orderJSON: JSON;
         let id: string;
-
+ 
         orderIdStorage = [];
-
+ 
         for (let key in tempJSON) {
             id = (decodeURI(tempJSON[key]._id));
             orderIdStorage.push(id);
