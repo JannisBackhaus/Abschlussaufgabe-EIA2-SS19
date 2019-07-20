@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const Http = require("http");
 const Url = require("url");
-const Database = require("./WBK_Database");
+const Database = require("./Database");
 var WBKreloadedServer;
 (function (WBKreloadedServer) {
     let order = {};

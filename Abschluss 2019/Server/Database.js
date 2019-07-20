@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Mongo = require("mongodb");
+var ObjectId = require("mongodb").ObjectID;
 console.log("Database starting");
 //let databaseURL: string = "mongodb://localhost:27017";
 //let databaseName: string = "Test";
@@ -41,7 +42,7 @@ function deleteAllOrders() {
 }
 exports.deleteAllOrders = deleteAllOrders;
 function deleteSingleOrder(id) {
-    orders.deleteOne({ "_id": ObjectId(id) });
+    orders.deleteOne({ "_id": "ObjectId(" + id + ")" });
 }
 exports.deleteSingleOrder = deleteSingleOrder;
 // insertion-handler receives an error object as standard parameter
@@ -52,7 +53,7 @@ function getData(_callback, targetDb) {
     if (targetDb == "data")
         var cursor = data.find();
     else
-        var cursor = orders.find();
+        cursor = orders.find();
     cursor.toArray(prepareAnswer);
     function prepareAnswer(_e, dataArray) {
         if (_e)
@@ -62,4 +63,4 @@ function getData(_callback, targetDb) {
     }
 }
 exports.getData = getData;
-//# sourceMappingURL=WBK_Database.js.map
+//# sourceMappingURL=Database.js.map

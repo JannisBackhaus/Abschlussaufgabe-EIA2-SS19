@@ -1,5 +1,7 @@
 
 import * as Mongo from "mongodb";
+var ObjectId = require("mongodb").ObjectID;
+
 console.log("Database starting");
 
 interface OrderData {
@@ -83,7 +85,7 @@ export function deleteAllOrders(): void {
 }
 
 export function deleteSingleOrder(id: string): void {
-        orders.deleteOne( { "_id" : ObjectId(id) } );
+        orders.deleteOne( { "_id" : "ObjectId(" + id + ")" } );
     
 }
 
@@ -97,7 +99,7 @@ export function getData(_callback: Function, targetDb: string): void {
     if (targetDb == "data")
         var cursor: Mongo.Cursor = data.find();
     else
-        var cursor: Mongo.Cursor = orders.find();
+        cursor = orders.find();
     cursor.toArray(prepareAnswer);
 
     function prepareAnswer(_e: Mongo.MongoError, dataArray: StoredData[]): void {

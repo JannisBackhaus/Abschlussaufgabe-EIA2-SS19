@@ -1,6 +1,6 @@
-namespace WBKreloadedUser {
+namespace WBKreloadedServer {
     export interface Categories {
-        [key: number]: Category;
+        [key: number]: Category ; 
     }
     export interface Category {
         title: string;
@@ -14,8 +14,8 @@ namespace WBKreloadedUser {
         price: number;
     }
     export interface Amount {
-        steps: number[],
-        display: string[],
+        steps: number[];
+        display: string[];
     }
 
-}    
+}

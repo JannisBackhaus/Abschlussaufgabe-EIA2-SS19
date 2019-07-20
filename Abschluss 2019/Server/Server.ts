@@ -1,6 +1,6 @@
 import * as Http from "http";
 import * as Url from "url";
-import * as Database from "./WBK_Database";
+import * as Database from "./Database";
 
 
 namespace WBKreloadedServer {
