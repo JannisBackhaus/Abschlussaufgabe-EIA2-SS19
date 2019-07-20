@@ -14,4 +14,8 @@ namespace AbschlussaufgabeSS19 {
         stock: number;
     }
 
+    export interface CartItem {
+        name: string;
+        price: string;
+    }
 }

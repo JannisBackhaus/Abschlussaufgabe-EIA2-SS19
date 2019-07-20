@@ -77,8 +77,8 @@ namespace AbschlussaufgabeSS19 {
         const itemsWrapper: HTMLElement = newElement("div", "items-wrapper", divBorder);
         const divDescriptionRow: HTMLElement = newElement("div", "row pb-3 mx-4", itemsWrapper);
 
-        const amountDescription: HTMLElement = newElement("div", "col-2 text-muted", divDescriptionRow);
-        amountDescription.innerHTML = "Amount";
+        const numberDescription: HTMLElement = newElement("div", "col-2 text-muted", divDescriptionRow);
+        numberDescription.innerHTML = "Number";
 
         const articleDescription: HTMLElement = newElement("div", "col-6 text-muted", divDescriptionRow);
         articleDescription.innerHTML = "Article";
@@ -91,11 +91,11 @@ namespace AbschlussaufgabeSS19 {
         for (let i in singleOrderJSON) {
             const divOrderRow: HTMLElement = newElement("div", "order-row row py-1 rounded mb-1 mx-4", itemsWrapper);
 
-            const amountCol: HTMLElement = newElement("div", "col-2", divOrderRow);
-            amountCol.innerHTML = singleOrderJSON[i].amount;
+            const numberCol: HTMLElement = newElement("div", "col-2", divOrderRow);
+            numberCol.innerHTML = (parseInt(i) + 1).toString();
 
             const articleCol: HTMLElement = newElement("div", "col-6", divOrderRow);
-            articleCol.innerHTML = singleOrderJSON[i].item;
+            articleCol.innerHTML = singleOrderJSON[i].name;
 
             const priceCol: HTMLElement = newElement("div", "col-3 text-right", divOrderRow);
             priceCol.innerHTML = singleOrderJSON[i].price;

@@ -56,6 +56,15 @@ var AbschlussaufgabeSS19;
                 if (_appendTo !== null)
                     _appendTo.append(button);
                 return button;
+            default:
+                const element = document.createElement(_element);
+                for (let i = 0; i < classArray.length; i++) {
+                    if (_classes !== "")
+                        element.classList.add(classArray[i]);
+                }
+                if (_appendTo !== null)
+                    _appendTo.append(element);
+                return element;
         }
     }
     AbschlussaufgabeSS19.newElement = newElement;
@@ -96,7 +105,8 @@ var AbschlussaufgabeSS19;
         let confirmButton = document.getElementById("confirm-modal");
         confirmButton.addEventListener("click", function (event) {
             closeModal();
-            AbschlussaufgabeSS19.deleteSingleOrder(elementToRemove);
+            if (document.URL.includes("orders"))
+                AbschlussaufgabeSS19.deleteSingleOrder(elementToRemove);
             elementToRemove.remove();
         });
         modal.hidden = isHidden;

@@ -54,8 +54,8 @@ var AbschlussaufgabeSS19;
         // ITEMS OF ORDER 
         const itemsWrapper = AbschlussaufgabeSS19.newElement("div", "items-wrapper", divBorder);
         const divDescriptionRow = AbschlussaufgabeSS19.newElement("div", "row pb-3 mx-4", itemsWrapper);
-        const amountDescription = AbschlussaufgabeSS19.newElement("div", "col-2 text-muted", divDescriptionRow);
-        amountDescription.innerHTML = "Amount";
+        const numberDescription = AbschlussaufgabeSS19.newElement("div", "col-2 text-muted", divDescriptionRow);
+        numberDescription.innerHTML = "Number";
         const articleDescription = AbschlussaufgabeSS19.newElement("div", "col-6 text-muted", divDescriptionRow);
         articleDescription.innerHTML = "Article";
         const priceDescription = AbschlussaufgabeSS19.newElement("div", "col-3 text-right text-muted", divDescriptionRow);
@@ -63,10 +63,10 @@ var AbschlussaufgabeSS19;
         let grandTotal = 0;
         for (let i in singleOrderJSON) {
             const divOrderRow = AbschlussaufgabeSS19.newElement("div", "order-row row py-1 rounded mb-1 mx-4", itemsWrapper);
-            const amountCol = AbschlussaufgabeSS19.newElement("div", "col-2", divOrderRow);
-            amountCol.innerHTML = singleOrderJSON[i].amount;
+            const numberCol = AbschlussaufgabeSS19.newElement("div", "col-2", divOrderRow);
+            numberCol.innerHTML = (parseInt(i) + 1).toString();
             const articleCol = AbschlussaufgabeSS19.newElement("div", "col-6", divOrderRow);
-            articleCol.innerHTML = singleOrderJSON[i].item;
+            articleCol.innerHTML = singleOrderJSON[i].name;
             const priceCol = AbschlussaufgabeSS19.newElement("div", "col-3 text-right", divOrderRow);
             priceCol.innerHTML = singleOrderJSON[i].price;
             const euroSymbol = AbschlussaufgabeSS19.newElement("div", "col-1", divOrderRow);

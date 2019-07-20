@@ -49,3 +49,10 @@
   .cart-link .cart-image {
     height: 2.5rem;
     width: auto; }
+
+.overflow-scroll {
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.cart-overlay .items-wrapper {
+  max-height: 16rem; }

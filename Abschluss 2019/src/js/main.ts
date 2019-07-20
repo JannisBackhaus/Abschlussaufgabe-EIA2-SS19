@@ -92,6 +92,19 @@ namespace AbschlussaufgabeSS19 {
 					_appendTo.append(button);
 
 				return button;
+
+			default:
+				const element: HTMLElement = document.createElement(_element);
+
+				for (let i: number = 0; i < classArray.length; i++) {
+					if (_classes !== "")
+						element.classList.add(classArray[i]);
+				}
+
+				if (_appendTo !== null)
+					_appendTo.append(element);
+
+				return element;
 		}
 
 	}
@@ -139,7 +152,8 @@ namespace AbschlussaufgabeSS19 {
 
 		confirmButton.addEventListener("click", function (event: Event): void {
 			closeModal();
-			deleteSingleOrder(elementToRemove);
+			if (document.URL.includes("orders"))
+				deleteSingleOrder(elementToRemove);
 			elementToRemove.remove();
 
 		});

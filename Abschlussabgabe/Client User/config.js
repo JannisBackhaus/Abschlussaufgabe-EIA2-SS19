@@ -383,7 +383,7 @@ var WBKreloadedUser;
             jsonarray.push({
                 amount: amountlist.item(i).innerHTML,
                 item: itemlist.item(i).innerHTML,
-                price: pricelist.item(i).innerHTML,
+                price: pricelist.item(i).innerHTML
             });
         }
         let query = JSON.stringify(jsonarray);

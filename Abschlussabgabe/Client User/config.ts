@@ -461,7 +461,7 @@ namespace WBKreloadedUser {
         }
 
 
-        let jsonarray: Entrypoints[] = []
+        let jsonarray: Entrypoints[] = [];
         let amountlist: HTMLCollection = document.getElementById("ov_amount").children;
         let itemlist: HTMLCollection = document.getElementById("ov_items").children;
         let pricelist: HTMLCollection = document.getElementById("ov_prices").children;
@@ -472,9 +472,8 @@ namespace WBKreloadedUser {
             jsonarray.push({
                 amount: amountlist.item(i).innerHTML,
                 item: itemlist.item(i).innerHTML,
-                price: pricelist.item(i).innerHTML,
-            }
-            )
+                price: pricelist.item(i).innerHTML
+            });
 
         }
         let query: string = JSON.stringify(jsonarray);
