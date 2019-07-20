@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const Mongo = require("./node_modules/mongodb");
+const Mongo = require("mongodb");
 var ObjectId = require("mongodb").ObjectID;
 console.log("Database starting");
 //let databaseURL: string = "mongodb://localhost:27017";

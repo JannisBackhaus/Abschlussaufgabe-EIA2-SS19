@@ -1,5 +1,5 @@
 
-import * as Mongo from "./node_modules/mongodb";
+import * as Mongo from "mongodb";
 var ObjectId = require("mongodb").ObjectID;
 
 console.log("Database starting");
