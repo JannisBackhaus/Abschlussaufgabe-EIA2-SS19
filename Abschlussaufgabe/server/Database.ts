@@ -85,7 +85,7 @@ export function deleteAllOrders(): void {
 }
 
 export function deleteSingleOrder(id: string): void {
-        orders.deleteOne( { "_id" : "ObjectId(" + id + ")" } );
+        orders.deleteOne( { "_id" : ObjectId(id) } );
     
 }
 
